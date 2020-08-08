@@ -78,6 +78,7 @@ class App extends React.Component {
           {this.state.persons.map((person, index) => {
             return (
               <Person
+                changed={this.nameChangedHandler}
                 click={() => this.onDeleteHandler(index)}
                 name={person.name}
                 age={person.age}
