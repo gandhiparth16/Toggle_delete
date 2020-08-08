@@ -49,7 +49,8 @@ class App extends React.Component {
   };
 
   onDeleteHandler = (personIndex) => {
-    const persons = this.state.persons;
+    //const persons = this.state.persons;
+    const persons = [...this.state.persons]; //creates copy of array
     persons.splice(personIndex, 1);
     this.setState({ persons: persons });
   };

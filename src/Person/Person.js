@@ -8,10 +8,10 @@ const person = (props) => {
     isHobby = `Hobby : ${hobby}`;
   }
   return (
-    <div className="Person" onClick={props.click}>
+    <div className="Person">
       {/*to add multiple lines inside return statement, use ();
               return multiple lines in output, use div to wrap. */}
-      <h5>
+      <h5 onClick={props.click}>
         {/*/function click from class App */}
         Hi {props.name} aged {props.age} years. {isHobby}
       </h5>
