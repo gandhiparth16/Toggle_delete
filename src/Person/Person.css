@@ -28,3 +28,11 @@
   box-shadow: 4px 15px rgb(189, 25, 25);
   margin: 5px;
 }
+
+.red {
+  color: red;
+}
+
+.italic {
+  font-style: italic;
+}

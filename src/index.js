@@ -88,12 +88,23 @@ class App extends React.Component {
           })}
         </div>
       );
+      style.backgroundColor = "red"; //dynamic styling
+    }
+
+    //let classes = ["red", "bold"].join(" ");
+    let classes = [];
+    if (this.state.persons.length > 0) {
+      classes.push("red");
+    }
+    if (this.state.persons.length > 1) {
+      classes.push("italic");
     }
 
     return (
       <div className="Site">
         <h1>Hello World!!</h1>
-        <h2>
+        <h2 className={classes.join(" ")}>
+          {/**use spacing between two style classes */}
           Start editing to see {Math.round(Math.random() * 5)} magic happen
           {name.toUpperCase()}!
         </h2>
